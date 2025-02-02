@@ -13,7 +13,35 @@
 .bg-third{
     background: #FFF9F4;
 }
-/* .trend-shop{
-    background-image: url(../assets/cute-pet-mid.png);
-    background-repeat: no-repeat;
-} */
+.d-none{
+    display: none;
+}
+.d-visible{
+    display: block;
+}
+@media screen and (max-width: 575px) {
+    .navbar-end {
+        display: none;
+    }
+    svg.h-5.w-5 {
+        display: none;
+    }
+    .fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
+        display: block;
+    }
+    .navbar.bg-base-100 {
+        justify-content: space-between;
+    }
+    img, video {
+        position: relative;
+        right: 45px;
+    }
+    .t-card-9.border.rounded-lg.bg-white.flex.px-10.py-5.h-32 {
+        display: none;
+    }
+}
+@media screen and (min-width: 576px)  {
+    .fa-brands:before, .fa-regular:before, .fa-solid:before, .fa:before, .fab:before, .far:before, .fas:before {
+        display: none;
+    }
+}
